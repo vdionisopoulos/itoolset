@@ -5,9 +5,15 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Skipping tests...\" && exit 0"
+    "test": "echo \"Skipping tests...\" && exit 1"
   },
-  "keywords": ["sla", "express", "node", "azure", "ejs"],
+  "keywords": [
+    "sla",
+    "express",
+    "node",
+    "azure",
+    "ejs"
+  ],
   "author": "Billie",
   "license": "MIT",
   "dependencies": {
