@@ -6,6 +6,7 @@
     </a>
 
     <ul class="sidebar-nav">
+
       <!-- Dashboard -->
       <li class="sidebar-item <%= title === 'Dashboard' ? 'active' : '' %>">
         <a class="sidebar-link" href="/">
@@ -16,26 +17,31 @@
 
       <!-- SLA Tools -->
       <li class="sidebar-item">
-        <a data-bs-target="#slaTools" data-bs-toggle="collapse" class="sidebar-link collapsed d-flex justify-content-between align-items-center" aria-expanded="false">
+        <a href="#slaTools"
+           data-bs-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="slaTools"
+           class="sidebar-link d-flex justify-content-between align-items-center collapsed">
           <span>
             <i data-feather="bar-chart-2" class="align-middle me-2"></i>
             <span class="align-middle">SLA Tools</span>
           </span>
           <i data-feather="chevron-down" class="collapse-arrow"></i>
         </a>
-        <ul id="slaTools" class="sidebar-dropdown list-unstyled collapse ps-4" data-bs-parent="#sidebar">
+        <ul id="slaTools" class="sidebar-dropdown list-unstyled collapse ps-4">
           <li class="sidebar-item">
-            <a class="sidebar-link d-flex align-items-center" href="/sla-calculator">
+            <a class="sidebar-link d-flex align-items-center <%= title === 'SLA Calculator' ? 'active fw-semibold' : '' %>" href="/sla-calculator">
               <span class="me-2">→</span> SLA Calculator
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link d-flex align-items-center" href="/sla-comparison">
+            <a class="sidebar-link d-flex align-items-center <%= title === 'SLA Comparison' ? 'active fw-semibold' : '' %>" href="/sla-comparison">
               <span class="me-2">→</span> SLA Comparison
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link d-flex align-items-center" href="/sla-reverse">
+            <a class="sidebar-link d-flex align-items-center <%= title === 'SLA Reverse' ? 'active fw-semibold' : '' %>" href="/sla-reverse">
               <span class="me-2">→</span> SLA Reverse
             </a>
           </li>
@@ -44,26 +50,31 @@
 
       <!-- Password Tools -->
       <li class="sidebar-item">
-        <a data-bs-target="#passTools" data-bs-toggle="collapse" class="sidebar-link collapsed d-flex justify-content-between align-items-center" aria-expanded="false">
+        <a href="#passTools"
+           data-bs-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="passTools"
+           class="sidebar-link d-flex justify-content-between align-items-center collapsed">
           <span>
             <i data-feather="lock" class="align-middle me-2"></i>
             <span class="align-middle">Password Tools</span>
           </span>
           <i data-feather="chevron-down" class="collapse-arrow"></i>
         </a>
-        <ul id="passTools" class="sidebar-dropdown list-unstyled collapse ps-4" data-bs-parent="#sidebar">
+        <ul id="passTools" class="sidebar-dropdown list-unstyled collapse ps-4">
           <li class="sidebar-item">
-            <a class="sidebar-link d-flex align-items-center" href="/password-generator">
+            <a class="sidebar-link d-flex align-items-center <%= title === 'Password Generator' ? 'active fw-semibold' : '' %>" href="/password-generator">
               <span class="me-2">→</span> Password Generator
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link d-flex align-items-center" href="/passphrase">
+            <a class="sidebar-link d-flex align-items-center <%= title === 'Passphrase Generator' ? 'active fw-semibold' : '' %>" href="/passphrase">
               <span class="me-2">→</span> Passphrase Generator
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link d-flex align-items-center" href="/password-checker">
+            <a class="sidebar-link d-flex align-items-center <%= title === 'Strength Checker' ? 'active fw-semibold' : '' %>" href="/password-checker">
               <span class="me-2">→</span> Strength Checker
             </a>
           </li>
@@ -71,7 +82,7 @@
       </li>
 
       <!-- Changelog -->
-      <li class="sidebar-item">
+      <li class="sidebar-item <%= title === 'Changelog' ? 'active' : '' %>">
         <a class="sidebar-link" href="/changelog">
           <i data-feather="file-text" class="align-middle"></i>
           <span class="align-middle">Changelog</span>
