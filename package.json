@@ -1,0 +1,17 @@
+{
+  "name": "itoolset",
+  "version": "1.0.0",
+  "description": "SLAlytics WebApp powered by Node.js + Express + EJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["sla", "express", "node", "azure", "ejs"],
+  "author": "Billie",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

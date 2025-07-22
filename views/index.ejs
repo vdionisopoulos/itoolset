@@ -1,0 +1,45 @@
+<%- include('partials/header', { title }) %>
+<%- include('partials/sidebar') %>
+
+<div class="main">
+  <%- include('partials/navbar') %>
+
+  <main class="content">
+    <div class="container-fluid p-0">
+      <h1 class="h3 mb-4"><%= title %></h1>
+
+      <div class="row">
+        <div class="col-md-6 col-xl-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">SLA Tools</h5>
+              <p>Calculator, Comparison, Reverse SLA.</p>
+              <a href="/sla-index.html" class="btn btn-primary">Open →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">IP Tools</h5>
+              <p>Coming Soon</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Password Tools</h5>
+              <p>Generate, check, and analyze passwords.</p>
+              <a href="/pass-index.html" class="btn btn-primary">Open →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+</div> <!-- end .main -->
